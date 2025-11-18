@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{Business Name}} - Official Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>{{Business Name}}</h1>
+            <p class="tagline">{{Short Tagline}}</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>{{About Section}}</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="container">
+            <h2>Services</h2>
+
+            <div class="service-grid">
+                <div class="service-card">{{Service 1}}</div>
+                <div class="service-card">{{Service 2}}</div>
+                <div class="service-card">{{Service 3}}</div>
+                <div class="service-card">{{Service 4}}</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="image-grid">
+                <img src="images/img1.jpg" alt="Gallery Image">
+                <img src="images/img2.jpg" alt="Gallery Image">
+                <img src="images/img3.jpg" alt="Gallery Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+
+            <form action="https://formsubmit.co/{{ClientEmailHere}}" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <input type="text" name="phone" placeholder="Your Phone" required />
+                <textarea name="message" placeholder="How can we help?" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourthankyoupage.com">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© {{Business Name}} | Powered by QuickSite99</p>
+    </footer>
+
+</body>
+</html>
